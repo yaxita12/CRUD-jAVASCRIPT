@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>CRUD Table</h1>
+
+    <form id="crud-form">
+        <input type="text" id="name" placeholder="Name">
+        <input type="text" id="email" placeholder="Email">
+        <button type="button" onclick="addRow()">Add</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+            <!-- Data rows will be inserted here -->
+        </tbody>
+    </table>
+
+  <script src="crud.js"></script>
+</body>
+</html>
